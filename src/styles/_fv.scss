@@ -1,0 +1,31 @@
+.fv img {
+  max-width: 390px;
+  min-width: 390px;
+}
+.fv {
+  position: relative;
+  &text {
+    position: absolute;
+    top: 450px;
+    left: 20px;
+  }
+}
+
+.fvnow {
+  position: absolute;
+  top: 500px;
+  left: 20px;
+  font-size: 96px;
+  color: #ff5c00;
+}
+img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+.lead-p {
+  line-height: 40px;
+}
+.lead-p span {
+  color: #ff5c00;
+}

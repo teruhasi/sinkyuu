@@ -1,0 +1,67 @@
+header {
+  max-width: 375px;
+  min-width: 375px;
+  width: 100vw;
+  font-size: 15px;
+}
+.header {
+  background-color: #404950;
+  display: flex;
+  z-index: 3;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  padding: 5px 10px;
+  justify-content: space-between;
+  height: 50px;
+}
+.menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #6674b8;
+  position: fixed;
+  top: 0;
+  right: 100%;
+  z-index: 1;
+  transition: all ease 1s;
+}
+.active {
+  right: 0;
+}
+.menu-btn {
+  position: relative;
+
+  z-index: 3;
+}
+.line,
+.line::after,
+.line::before {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: blue;
+  transition: all ease 1s;
+}
+.line {
+  position: relative;
+}
+
+.line::after {
+  position: absolute;
+  top: -10px;
+}
+.line-active {
+  background-color: transparent;
+}
+.line::before {
+  position: absolute;
+  top: 10px;
+}
+.line-active::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+.line-active::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
